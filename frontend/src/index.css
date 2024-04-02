@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.header-bg {
+    border-bottom: 3px solid #FAFAFB;
+    padding: 10px;
+}
+
+.reponsive-menu {
+    background: rgba(0, 0, 0, 0.5) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    backdrop-filter: blur(5px);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+}
+
+.banner-bg {
+    margin-top: 20px;
+    background: linear-gradient(67deg, #E71D3A 0%, #ECC7C1 45%, #EFCAC4 58%, #E4BDB8 70%, #42A8FE 100%) 0% 0% no-repeat padding-box;
+}
+
+
+.slick-prev:before,
+.slick-next:before {
+    color: black !important;
+    font-size: 26px !important;
+    z-index: 9999 !important;
+    /* display: none !important; */
+
+}
+
+.slick-prev:before {
+    margin-right: 50px !important;
+}
+
+@media (max-width:412px) {
+    .slick-next:before {
+        display: none !important;
+
+    }
+
+    .slick-next {
+        right: 0px !important;
+    }
+}
+
+.Loader {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.Loader h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+
+}
+
+.CartHovera:hover div{
+    bottom: 0 ;
+    transition: 0.5s ;
+}
